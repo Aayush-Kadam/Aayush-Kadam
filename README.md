@@ -2,7 +2,7 @@
 
 ### Making complex decisions testable, explainable, and verifiable.
 
-B.Tech Computer Science Sophomore at **MIT ADT University**. I build research software and developer tools around a practical question: **what evidence would make a difficult result worth trusting?**
+Computer Science Sophomore at **MIT ADT University**. I build research software and developer tools around a practical question: **what evidence would make a difficult result worth trusting?**
 
 Start with **[GhostFrame](https://github.com/Aayush-Kadam/ghostframe)**: a local recorder and branching debugger for supported deterministic agent workflows.
 

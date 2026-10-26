@@ -49,14 +49,16 @@ by the owner. No private email is added.
 
 ## Live signals
 
-1. Komarev's free profile-view service uses the exact username Aayush-Kadam,
-   with no base offset, token or paid account. It counts image requests, not
+1. Hits.sh's free service uses the profile key github.com/Aayush-Kadam,
+   with no extraCount offset, token or paid account. It counts image requests, not
    unique visitors. GitHub's Camo cache can coalesce, delay or fail requests.
    Previews, validation and direct requests also affect the count. Existing
    provider history is unknown; this installation cannot establish lifetime
-   coverage or a new zero baseline. Do not label it "since October 2026".
+   coverage. Validation began on 26 October 2026; test requests affect the count.
+   Komarev returned SVG directly but failed in GitHub Camo during visual QA,
+   so it was replaced rather than reporting a direct response as render success.
 2. Shields' GitHub stars endpoint reports the GhostFrame public repository's
-   star count, subject to provider caching. Clicking opens GitHub's source list.
+   star count, subject to provider caching. Clicking opens the source repository.
 3. GitHub's native workflow badge reports ci.yml on main, not a reviewer branch
    or this profile PR. It is a cached latest-status signal, not a test total or
    reliability guarantee. Clicking opens that workflow filtered to main.
@@ -67,7 +69,7 @@ No workflow, access token, analytics script, tracking pixel beyond the disclosed
 view badge, paid service or external website was introduced. GitHub proxies
 README image requests; direct provider visits have ordinary provider privacy
 implications. Provider source and cache explanation:
-https://github.com/antonkomarev/github-profile-views-counter
+https://github.com/silentsoft/hits
 https://shields.io/badges/git-hub-repo-stars
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls
 

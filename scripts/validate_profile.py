@@ -27,7 +27,7 @@ def main():
         assert not re.search(r'<(?:script|foreignObject|image|animate)\b|https?://(?!www.w3.org)|onload=',content),path
     size=sum(p.stat().st_size for p in files)
     assert size < 2_000_000,size
-    assert 'username=Aayush-Kadam' in readme and '&base=' not in readme
+    assert 'hits.sh/github.com/Aayush-Kadam.svg' in readme and 'extraCount=' not in readme
     assert not re.search(r'<(?:script|iframe|style)\b',readme)
     print(f'PASS: {len(targets)} links/image sources; {len(files)} safe accessible SVGs; {size:,} bytes; anchors and alt text.')
 

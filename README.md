@@ -81,8 +81,8 @@ These are computational studies and working materials. A public repository or ar
 
 ## Live signals
 
-[![Profile view counter: provider-counted image requests](https://komarev.com/ghpvc/?username=Aayush-Kadam&label=Profile+image+requests&color=157784&style=flat-square)](https://github.com/antonkomarev/github-profile-views-counter)
-[![GhostFrame repository stars](https://img.shields.io/github/stars/Aayush-Kadam/ghostframe?label=GhostFrame%20stars&style=flat-square&color=b18b48)](https://github.com/Aayush-Kadam/ghostframe/stargazers)
+[![Profile view counter: provider-counted image requests](https://hits.sh/github.com/Aayush-Kadam.svg?label=Profile%20image%20requests&color=157784&labelColor=151d2b&style=flat-square)](https://hits.sh/github.com/Aayush-Kadam/)
+[![GhostFrame repository stars](https://img.shields.io/github/stars/Aayush-Kadam/ghostframe?label=GhostFrame%20stars&style=flat-square&color=b18b48)](https://github.com/Aayush-Kadam/ghostframe)
 [![GhostFrame main verification status](https://github.com/Aayush-Kadam/ghostframe/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Aayush-Kadam/ghostframe/actions/workflows/ci.yml?query=branch%3Amain)
 
 The view counter records provider-served image requests, including previews and repeat loads. GitHub caching affects updates; this is **not unique visitors or lifetime profile traffic**. Stars and CI are cached live service images. If a badge is unavailable, its source link remains usable. [How these signals work](docs/MAINTENANCE.md#live-signals).

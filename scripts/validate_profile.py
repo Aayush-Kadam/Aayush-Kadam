@@ -28,14 +28,14 @@ def main():
     size=sum(p.stat().st_size for p in files)
     assert size < 2_000_000,size
     assert 'hits.sh/github.com/Aayush-Kadam.svg' in readme and 'extraCount=' not in readme
-    assert readme.index('hits.sh/github.com/Aayush-Kadam.svg') < readme.index('## Selected instruments')
-    assert 'assets/hero/observatory-v2.webp' in readme
+    assert readme.index('hits.sh/github.com/Aayush-Kadam.svg') < readme.index('## Selected engineering')
+    assert 'assets/hero/observatory.svg' in readme
+    assert 'assets/hero/observatory-mobile.svg' in readme
     assert 'PROFILE IMAGE REQUESTS' in readme and 'Profile%20image%20requests' in readme
     contact=readme.split('## Connect',1)[1]
     assert 'https://github.com/Aayush-Kadam' not in contact, 'Redundant GitHub contact link'
-    assert 'site/README.md' in readme and 'aayush-kadam.github.io' not in readme
-    assert (ROOT/'site/src/main.ts').is_file() and (ROOT/'site/public/vendor/three.min.js').is_file()
-    assert (ROOT/'site/vite.config.ts').read_text(encoding='utf-8').find("base: '/Aayush-Kadam/'") >= 0
+    assert not re.search(r'(?i)site/|github pages|webgl|three\.js|interactive portfolio|local preview', readme)
+    assert not (ROOT/'site').exists() and not (ROOT/'.github/workflows/pages.yml').exists()
     assert not re.search(r'<(?:script|iframe|style)\b',readme)
     print(f'PASS: {len(targets)} links/image sources; {len(files)} safe accessible SVGs; {size:,} bytes; anchors and alt text.')
 

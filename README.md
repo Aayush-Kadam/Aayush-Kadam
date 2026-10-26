@@ -1,102 +1,57 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/hero/observatory-mobile.svg">
-  <img src="assets/hero/observatory.svg" width="1200" alt="Aayush Kadam — Code. Incentives. Evidence. Engineering, economics, entrepreneurship. A luminous computational instrument suspended in an orbital observatory.">
+  <source media="(max-width: 600px)" srcset="assets/hero/observatory-v2-mobile.webp">
+  <img src="assets/hero/observatory-v2.webp" width="1200" alt="Actual browser capture of the Observatory: Aayush Kadam's introduction beside a luminous, rendered three-dimensional polyhedral instrument and orbital rings.">
 </picture>
 
 # Aayush Kadam
 
-**I build tools that make difficult claims easier to interrogate.**
+### Ideas meet evidence.
 
-Computer Science sophomore at **MIT ADT University, Pune**. Founder building developer tools and experimental software, with a research interest in incentives, AI systems, and how decisions survive contact with evidence. Long term, I'm interested in the meeting point of entrepreneurship and finance.
+I build instruments for the point where **software behavior, economic incentives, and confident claims become testable**. I'm a Computer Science sophomore at MIT ADT University, Pune, working across developer tools and computational research.
 
-[Explore the engineering ↓](#selected-engineering) · [Enter the research atlas ↓](#research-atlas) · [Talk shop ↗](#connect)
+<table>
+<tr><td><strong>LIVE PROFILE IMAGE REQUESTS</strong><br><a href="https://hits.sh/github.com/Aayush-Kadam/"><img src="https://hits.sh/github.com/Aayush-Kadam.svg?label=Profile%20image%20requests&color=438b9b&labelColor=17232f&style=for-the-badge" alt="Live Hits.sh count of provider-served profile image requests"></a><br><sub>Hits.sh counts requests for this badge, including repeat loads and previews. GitHub's image cache may delay updates. This is not a unique-visitor or lifetime-profile-view count.</sub></td></tr>
+</table>
 
-## On the workbench
+> **The 3D experience is built and under review.** GitHub README pages cannot run WebGL or react to a cursor. The image above is a real screenshot of the separate interactive site. Public access awaits owner-approved GitHub Pages deployment.
 
-**Agent infrastructure** — recording what happened, reproducing supported executions, and making a changed observation inspectable.<br>
-**Computational economics** — strategic delay, algorithmic bidders, and incentives created by persistent records.<br>
-**Experimental products** — developer tools and research interfaces with visible assumptions and reproducible examples.
+### [EXPLORE THE INTERACTIVE BUILD AND LOCAL PREVIEW ↗](site/README.md)
 
-## Selected engineering
+Once deployment is approved and verified, this gateway will link directly to the live site. The current link opens the build and review instructions; it does not imply the site is public.
 
-<a href="https://github.com/Aayush-Kadam/ghostframe"><img src="assets/projects/ghostframe.svg" width="1200" alt="01 — GhostFrame. Change one observation. Inspect what follows. A branching execution diagram."></a>
+---
 
-A local-first recorder and counterfactual debugger for **supported deterministic AI-agent workflows**. Python captures execution into SQLite; a React/TypeScript interface makes the evidence explorable.
+## Selected instruments
 
-**The interesting part:** replay a supported policy, replace one observation, and compare the new continuation with the preserved original.
+<a href="https://github.com/Aayush-Kadam/ghostframe"><img src="assets/projects/ghostframe.svg" width="1200" alt="GhostFrame branching execution diagram"></a>
 
-`Python` `SQLite` `FastAPI` `React / TypeScript`<br>
-**Pre-release.** Arbitrary SDK functions support playback only; general agent resumption and live-model replay are not implemented.
+**[GhostFrame ↗](https://github.com/Aayush-Kadam/ghostframe)** — Record supported deterministic AI-agent executions, change one observation, and inspect the resulting continuation against the preserved original. **Pre-release:** arbitrary SDK functions support playback only; general agent resumption and live-model replay are not implemented.
 
-[Inspect the source ↗](https://github.com/Aayush-Kadam/ghostframe) · [Architecture](https://github.com/Aayush-Kadam/ghostframe/blob/main/docs/architecture.md) · [Synthetic demo](https://github.com/Aayush-Kadam/ghostframe#start-the-synthetic-demonstration)
+<a href="https://github.com/Aayush-Kadam/economic-protocol-verifier"><img src="assets/projects/epv.svg" width="1200" alt="Economic Protocol Verifier finite assurance diagram"></a>
 
-<a href="https://github.com/Aayush-Kadam/economic-protocol-verifier"><img src="assets/projects/epv.svg" width="1200" alt="02 — Economic Protocol Verifier. Small domains. Explicit assurance. A finite grid with a certificate check."></a>
+**[Economic Protocol Verifier ↗](https://github.com/Aayush-Kadam/economic-protocol-verifier)** — Bounded verification for selected economic protocols with finite semantics, replayable counterexamples, and scoped certificate checks. **Research preview:** the economic-to-logic translation remains trusted; the external checker is required for the strongest assurance level.
 
-Bounded verification for selected economic protocols: finite semantics, exhaustive and SMT checks, replayable counterexamples, and checked proof certificates for specific compiled obligations.
+<a href="https://github.com/Aayush-Kadam/incentive-fuzzer"><img src="assets/projects/incentive-fuzzer.svg" width="1200" alt="Incentive Fuzzer counterexample search diagram"></a>
 
-**The interesting part:** assurance levels distinguish enumeration, solver results, and independent certificate checking instead of calling all three “proof.”
+**[Incentive Fuzzer ↗](https://github.com/Aayush-Kadam/incentive-fuzzer)** — Search feasible behavior for a counterexample, replay the witness exactly, and regression-test a proposed repair. **Research preview:** bounded component tests are not forecasts or real-world audit accuracy; no software license has been selected.
 
-`Python` `Z3 / cvc5` `Alethe / Carcara`<br>
-**Research preview.** Finite declared domains; economic-to-logic translation remains trusted. V3 requires the pinned external checker. Restrictive reuse terms apply.
+## Computational research
 
-[Inspect the source ↗](https://github.com/Aayush-Kadam/economic-protocol-verifier) · [Reviewer walkthrough](https://github.com/Aayush-Kadam/economic-protocol-verifier/blob/main/docs/REVIEWER_WALKTHROUGH.md) · [Trust boundaries](https://github.com/Aayush-Kadam/economic-protocol-verifier/blob/main/TRUST_AND_ASSURANCE.md)
+| Question | Public work | Scope |
+| :-- | :-- | :-- |
+| When does waiting change the pool worth waiting for? | [WAITLAB ↗](https://github.com/Aayush-Kadam/WaitLab) | Strategic delay and synthetic response recovery; research software |
+| How do persistent records change incentives to rehabilitate? | [The Economics of Forgetting ↗](https://github.com/Aayush-Kadam/economics-of-forgetting) | Finite-horizon model; working paper, not peer reviewed |
+| What happens when persuasive evidence is cheap? | [VERITAS ↗](https://github.com/Aayush-Kadam/veritas-computational-lab) | Computational lab; model-generated evidence with mixed recovery results |
+| How do auction rankings change when algorithms bid? | [Delegation-Proof Market Design ↗](https://github.com/Aayush-Kadam/delegation-proof-market-design) | Finite-horizon artifacts; no successful general mechanism claimed |
 
-<a href="https://github.com/Aayush-Kadam/incentive-fuzzer"><img src="assets/projects/incentive-fuzzer.svg" width="1200" alt="03 — Incentive Fuzzer. Give the rule an adversary. A search lens isolates a witness in a finite grid."></a>
+Public repositories and archive records do not establish peer review or independent replication.
 
-Adversarial testing for bounded economic rules. Specify the rule, search feasible behavior, replay a witness exactly, and regression-test a proposed repair.
+## The working method
 
-**The interesting part:** counterexamples and benchmark misses remain inspectable alongside successful checks.
-
-`Python` `Exact evaluation` `Z3`<br>
-**Research preview.** Component benchmarks are not real-world audit accuracy or behavioral forecasts. No software license has been selected; check reuse terms.
-
-[Inspect the source ↗](https://github.com/Aayush-Kadam/incentive-fuzzer) · [Reviewer walkthrough](https://github.com/Aayush-Kadam/incentive-fuzzer/blob/master/docs/REVIEWER_WALKTHROUGH.md) · [Reuse terms](https://github.com/Aayush-Kadam/incentive-fuzzer/blob/master/LICENSE_DECISION.md)
-
-## Research atlas
-
-<img src="assets/graphics/research-atlas.svg" width="1200" alt="Research atlas connecting matching, memory, information, and mechanisms. Model, computation, reproduction, review.">
-
-**01 / Matching — [WAITLAB](https://github.com/Aayush-Kadam/WaitLab)**<br>
-When does waiting change the pool worth waiting for? Strategic delay, dynamic matching, and synthetic response recovery. [Paper-to-code map](https://github.com/Aayush-Kadam/WaitLab/blob/main/docs/PAPER_TO_CODE.md). **Released computational research software; synthetic evidence.**
-
-**02 / Memory — [The Economics of Forgetting](https://github.com/Aayush-Kadam/economics-of-forgetting)**<br>
-How do persistent records change the return to rehabilitation? A finite-horizon model with regional results. **Working paper; not peer reviewed.**
-
-**03 / Information — [VERITAS](https://github.com/Aayush-Kadam/veritas-computational-lab)**<br>
-What happens when persuasive evidence is cheap and verification is scarce? A computational lab for deception, congestion, and Bayesian demand. **Model-generated evidence; mixed recovery results.**
-
-**04 / Mechanisms — [Delegation-Proof Market Design](https://github.com/Aayush-Kadam/delegation-proof-market-design)**<br>
-How do auction rankings change when algorithms bid? Finite-horizon revenue–allocation tradeoffs, scoped certificates, and failed repairs. **Research artifacts; no successful delegation-proof mechanism claimed.**
-
-These are computational studies and working materials. A public repository or archive DOI does not establish peer review or external replication. [More experiments ↗](https://github.com/Aayush-Kadam?tab=repositories)
-
-## Tools behind the work
-
-| Practice | Tools I use |
-| :--- | :--- |
-| Languages & interfaces | Python · TypeScript · JavaScript · React |
-| Systems | FastAPI · SQLite · Git |
-| Verification & reliability | Z3 · cvc5 · Pytest · Hypothesis · Ruff · mypy · GitHub Actions |
-| Computational research | NumPy · Pandas · finite models · seeded simulation |
-
-## Live signals
-
-[![Profile view counter: provider-counted image requests](https://hits.sh/github.com/Aayush-Kadam.svg?label=Profile%20image%20requests&color=157784&labelColor=151d2b&style=flat-square)](https://hits.sh/github.com/Aayush-Kadam/)
-[![GhostFrame repository stars](https://img.shields.io/github/stars/Aayush-Kadam/ghostframe?label=GhostFrame%20stars&style=flat-square&color=b18b48)](https://github.com/Aayush-Kadam/ghostframe)
-[![GhostFrame main verification status](https://github.com/Aayush-Kadam/ghostframe/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Aayush-Kadam/ghostframe/actions/workflows/ci.yml?query=branch%3Amain)
-
-The view counter records provider-served image requests, including previews and repeat loads. GitHub caching affects updates; this is **not unique visitors or lifetime profile traffic**. Stars and CI are cached live service images. If a badge is unavailable, its source link remains usable. [How these signals work](docs/MAINTENANCE.md#live-signals).
-
-## A working principle
-
-I'd rather find the counterexample myself.
-
-The fun starts when a clean idea meets a stubborn result: an agent that cannot replay, an auction rule that invites a better strategy, or a model that loses to its baseline. I want the failure small enough to reproduce, and the next version better for having found it.
+**Preserve the source. Expose the assumption. Reproduce the result.** Python and TypeScript for instruments; SQLite and React for inspectable interfaces; Z3/cvc5, finite models, Pytest, and Hypothesis for bounded claims.
 
 ## Connect
 
-Building agent infrastructure, checking a mechanism, or arguing with a model? Let's compare notes.
+Building agent infrastructure, checking a mechanism, or arguing with a model? [Connect on LinkedIn ↗](https://www.linkedin.com/in/aayush-kadam-18545a217).
 
-**[GitHub ↗](https://github.com/Aayush-Kadam) · [LinkedIn ↗](https://www.linkedin.com/in/aayush-kadam-18545a217)**
-
-<sub>Original Observatory artwork · [Sources & maintenance](docs/MAINTENANCE.md) · Built to be inspected.</sub>
+<sub>[Source and claim ledger](docs/SOURCES.md) · [Counter and artwork notes](docs/MAINTENANCE.md) · [Interactive build](site/README.md)</sub>

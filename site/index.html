@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Aayush Kadam's interactive observatory: engineering, economics, and evidence, explored through a responsive 3D instrument." />
+  <title>Aayush Kadam — The Observatory</title>
+</head>
+<body>
+  <a class="skip-link" href="#identity">Skip to content</a>
+  <div id="app">
+    <header class="topbar">
+      <a class="wordmark" href="#identity" aria-label="Aayush Kadam, back to beginning"><span class="mark">A<span class="mark-cut">/</span>K</span><span class="wordmark-text">AAYUSH KADAM<span class="wordmark-sub">THE OBSERVATORY</span></span></a>
+      <nav class="top-nav" aria-label="Chapters">
+        <a href="#identity" data-nav="identity">01 <span>Identity</span></a>
+        <a href="#engineering" data-nav="engineering">02 <span>Engineering</span></a>
+        <a href="#research" data-nav="research">03 <span>Research</span></a>
+        <a href="#capabilities" data-nav="capabilities">04 <span>Capabilities</span></a>
+        <a href="#contact" data-nav="contact">05 <span>Contact</span></a>
+      </nav>
+      <a class="top-link" href="https://github.com/Aayush-Kadam" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+    </header>
+
+    <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+    <aside class="scene-shell" aria-label="Interactive three-dimensional computational instrument">
+      <canvas id="observatory" aria-label="Drag to inspect the computational singularity; scroll to transform it through five chapters"></canvas>
+      <div id="scene-fallback" class="scene-fallback" hidden>
+        <svg viewBox="0 0 600 600" role="img" aria-label="Static illustration of a polyhedral instrument with orbital rings"><defs><radialGradient id="glow"><stop stop-color="#263d56"/><stop offset="1" stop-color="#080b12"/></radialGradient></defs><circle cx="300" cy="300" r="290" fill="url(#glow)"/><g fill="none" stroke="#5fb9d0" opacity=".7"><ellipse cx="300" cy="300" rx="218" ry="92" transform="rotate(-29 300 300)"/><ellipse cx="300" cy="300" rx="115" ry="230" transform="rotate(22 300 300)"/><ellipse cx="300" cy="300" rx="202" ry="190" transform="rotate(58 300 300)"/></g><path d="M300 121 452 218 432 398 300 483 168 398 148 218Z" fill="#132632" stroke="#9adae5"/><path d="M300 121 300 483M148 218 432 398M452 218 168 398M148 218 452 218M168 398 432 398" fill="none" stroke="#52869d"/><circle cx="300" cy="300" r="42" fill="#b4eaf0" opacity=".7"/></svg>
+        <span>THE INSTRUMENT IS STILL HERE · TEXT AND LINKS REMAIN AVAILABLE</span>
+      </div>
+      <div class="scene-topline" aria-hidden="true"><span>SPECIMEN / AK—01</span><span>REACTIVE MODEL · 2026</span></div>
+      <div class="scene-baseline" aria-hidden="true"><span id="scene-state">INITIALIZING MODEL</span><span>DRAG TO INSPECT&nbsp; ↗</span></div>
+      <div class="touch-controls" aria-label="Rotate the three-dimensional instrument"><button type="button" id="rotate-left" aria-label="Rotate instrument left">↶</button><button type="button" id="rotate-right" aria-label="Rotate instrument right">↷</button></div>
+      <div class="node-card" id="node-card" hidden aria-live="polite"><button type="button" id="node-close" aria-label="Close project detail">×</button><span id="node-index"></span><h3 id="node-title"></h3><p id="node-description"></p><a id="node-link" target="_blank" rel="noopener noreferrer">OPEN VERIFIED REPOSITORY ↗</a></div>
+    </aside>
+
+    <main>
+      <section id="identity" class="chapter chapter-identity" data-chapter="0" aria-labelledby="identity-title">
+        <div class="chapter-content hero-content">
+          <div class="eyebrow"><span class="signal-dot"></span> CREATIVE ENGINEERING / COMPUTATIONAL RESEARCH <span class="eyebrow-line"></span> 01—05</div>
+          <h1 id="identity-title">Ideas meet<br><em>evidence.</em></h1>
+          <p class="hero-lead">I’m Aayush Kadam. I build instruments for the point where software behavior, economic incentives, and confident claims become testable.</p>
+          <div class="hero-actions"><a class="button-primary" href="#engineering">EXPLORE THE WORK <span>↓</span></a><a class="text-link" href="https://github.com/Aayush-Kadam" target="_blank" rel="noopener noreferrer">VIEW GITHUB PROFILE ↗</a></div>
+          <div class="hero-foot"><span>COMPUTER SCIENCE · MIT ADT UNIVERSITY, PUNE</span><span>SCROLL TO TRANSFORM THE INSTRUMENT ↓</span></div>
+        </div>
+      </section>
+
+      <section id="engineering" class="chapter" data-chapter="1" aria-labelledby="engineering-title">
+        <div class="chapter-content">
+          <div class="chapter-number">02 <span>/</span> ENGINEERING</div>
+          <h2 id="engineering-title">Make the system<br><em>answer back.</em></h2>
+          <p class="chapter-intro">Tools for inspecting what happened, what changed, and which conclusions actually follow.</p>
+          <div class="project-stack">
+            <a class="project-card" href="https://github.com/Aayush-Kadam/ghostframe" target="_blank" rel="noopener noreferrer" data-project="ghostframe"><span class="card-num">01 / AGENT SYSTEMS</span><strong>GhostFrame</strong><span class="card-desc">Record supported deterministic agent executions, change one observation, and compare the continuation with the original.</span><span class="card-meta">PRE-RELEASE · PYTHON / SQLITE / REACT <b>↗</b></span></a>
+            <a class="project-card" href="https://github.com/Aayush-Kadam/economic-protocol-verifier" target="_blank" rel="noopener noreferrer" data-project="epv"><span class="card-num">02 / FORMAL ASSURANCE</span><strong>Economic Protocol Verifier</strong><span class="card-desc">Check bounded economic protocols with finite semantics, replayable counterexamples, and scoped certificate checks.</span><span class="card-meta">RESEARCH PREVIEW · Z3 / CVC5 <b>↗</b></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="chapter" data-chapter="2" aria-labelledby="research-title">
+        <div class="chapter-content">
+          <div class="chapter-number">03 <span>/</span> ECONOMICS & RESEARCH</div>
+          <h2 id="research-title">The mechanism<br><em>beneath the claim.</em></h2>
+          <p class="chapter-intro">Small models can make a large assumption visible. These projects keep their boundaries in view.</p>
+          <div class="project-stack">
+            <a class="project-card" href="https://github.com/Aayush-Kadam/incentive-fuzzer" target="_blank" rel="noopener noreferrer" data-project="fuzzer"><span class="card-num">03 / ADVERSARIAL TESTING</span><strong>Incentive Fuzzer</strong><span class="card-desc">Search feasible behavior for a counterexample, replay the witness exactly, and test a proposed repair.</span><span class="card-meta">RESEARCH PREVIEW · FINITE RULES <b>↗</b></span></a>
+            <div class="research-pair"><a href="https://github.com/Aayush-Kadam/WaitLab" target="_blank" rel="noopener noreferrer"><span>04 / MATCHING</span><strong>WAITLAB</strong><small>Strategic delay and synthetic response recovery. Research software.</small><b>↗</b></a><a href="https://github.com/Aayush-Kadam/economics-of-forgetting" target="_blank" rel="noopener noreferrer"><span>05 / MEMORY</span><strong>Economics of Forgetting</strong><small>Persistent records and the return to rehabilitation. Working paper.</small><b>↗</b></a></div>
+          </div>
+          <p class="scope-note">Computational studies and working materials; publication does not imply peer review or external replication.</p>
+        </div>
+      </section>
+
+      <section id="capabilities" class="chapter" data-chapter="3" aria-labelledby="capabilities-title">
+        <div class="chapter-content">
+          <div class="chapter-number">04 <span>/</span> CAPABILITIES</div>
+          <h2 id="capabilities-title">A practice of<br><em>clear boundaries.</em></h2>
+          <p class="chapter-intro">The tools change. The discipline stays: preserve the source, expose the assumption, reproduce the result.</p>
+          <div class="capability-grid"><div><span>01 / BUILD</span><strong>Python · TypeScript<br>React · FastAPI</strong></div><div><span>02 / VERIFY</span><strong>Z3 · cvc5<br>Pytest · Hypothesis</strong></div><div><span>03 / INVESTIGATE</span><strong>Finite models · simulation<br>NumPy · Pandas</strong></div><div><span>04 / SHIP</span><strong>SQLite · Git<br>GitHub Actions</strong></div></div>
+        </div>
+      </section>
+
+      <section id="contact" class="chapter chapter-contact" data-chapter="4" aria-labelledby="contact-title">
+        <div class="chapter-content">
+          <div class="chapter-number">05 <span>/</span> CONTACT</div>
+          <h2 id="contact-title">The next question<br><em>starts here.</em></h2>
+          <p class="chapter-intro">Building an agent tool, testing a mechanism, or arguing with a model? I’m interested in the difficult edge cases.</p>
+          <a class="button-primary" href="https://www.linkedin.com/in/aayush-kadam-18545a217" target="_blank" rel="noopener noreferrer">CONNECT ON LINKEDIN <span>↗</span></a>
+          <footer><span>AAYUSH KADAM / THE OBSERVATORY</span><span>CODE · INCENTIVES · EVIDENCE</span><a href="#identity">BACK TO ORIGIN ↑</a></footer>
+        </div>
+      </section>
+    </main>
+  </div>
+  <noscript><p class="noscript">JavaScript is required for the interactive 3D instrument. The project links and story above remain available.</p></noscript>
+  <script src="%BASE_URL%vendor/three.min.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

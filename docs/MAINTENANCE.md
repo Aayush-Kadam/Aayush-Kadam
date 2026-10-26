@@ -25,8 +25,10 @@ The deterministic seed controls decorative stars only. Edit text, palette or
 projection in the generator; never hand-edit output and expect regeneration to
 preserve it. Desktop and <=600px hero variants use picture/source with an img
 fallback. Every graphic has a title, description and README alt text.
-The visuals are deliberately static: no essential animation, flashes, video,
-motion preference dependency or GIF payload. The static image is the full design.
+Only the dotted orbital traces drift, on an 80-second seamless cycle inside
+the two hero SVGs. Embedded CSS stops that motion under prefers-reduced-motion.
+No essential meaning relies on it; static rendering is the complete design.
+There are no flashes, videos, JavaScript or GIF payloads.
 The vector paths stay crisp at high density. The body preserves identity,
 project scope and links if graphics fail. At narrow widths, the body remains the
 authoritative readable content; diagram annotations are decorative.

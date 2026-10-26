@@ -26,6 +26,11 @@ def wrap(w,h,title,body,desc):
 <linearGradient id="edge"><stop stop-color="{CYAN}"/><stop offset=".55" stop-color="#80CCD8"/><stop offset="1" stop-color="{GOLD}"/></linearGradient>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#23354B" stroke-width=".5"/></pattern>
 </defs>
+<style>
+@keyframes orbital-trace {{ to {{ stroke-dashoffset: -480; }} }}
+.orbital-trace {{ animation: orbital-trace 80s linear infinite; }}
+@media (prefers-reduced-motion: reduce) {{ .orbital-trace {{ animation: none; }} }}
+</style>
 <rect width="{w}" height="{h}" rx="20" fill="{BG}"/>
 <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#2B3A50"/>
 {body}</svg>'''
@@ -39,7 +44,7 @@ def instrument(cx,cy,scale=1):
         out.append(circle(x,y,rng.choice([.7,1,1.5]),MUTED,.35))
     for rx,ry,rot,col in [(225,80,-24,CYAN),(214,86,43,GOLD),(210,92,91,VIOLET)]:
         out.append(f'<ellipse rx="{rx}" ry="{ry}" transform="rotate({rot})" fill="none" stroke="{col}" stroke-opacity=".3" stroke-width="1"/>')
-        out.append(f'<ellipse rx="{rx+8}" ry="{ry+5}" transform="rotate({rot})" fill="none" stroke="{col}" stroke-opacity=".12" stroke-dasharray="2 10"/>')
+        out.append(f'<ellipse class="orbital-trace" rx="{rx+8}" ry="{ry+5}" transform="rotate({rot})" fill="none" stroke="{col}" stroke-opacity=".12" stroke-dasharray="2 10"/>')
     for a in range(0,360,6):
         rad=math.radians(a)
         r1=245 if a%30 else 239

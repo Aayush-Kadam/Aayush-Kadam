@@ -31,7 +31,7 @@ def main():
     assert readme.index('hits.sh/github.com/Aayush-Kadam.svg') < readme.index('## Selected engineering')
     assert 'assets/hero/observatory.svg' in readme
     assert 'assets/hero/observatory-mobile.svg' in readme
-    assert 'PROFILE IMAGE REQUESTS' in readme and 'Profile%20image%20requests' in readme
+    assert '<strong>VIEWS</strong>' in readme and 'label=Views&' in readme
     contact=readme.split('## Connect',1)[1]
     assert 'https://github.com/Aayush-Kadam' not in contact, 'Redundant GitHub contact link'
     assert not re.search(r'(?i)site/|github pages|webgl|three\.js|interactive portfolio|local preview', readme)

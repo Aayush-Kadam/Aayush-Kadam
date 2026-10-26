@@ -4,9 +4,9 @@
 </picture>
 
 <p align="center">
-  <strong>PROFILE IMAGE REQUESTS</strong><br>
-  <a href="https://hits.sh/github.com/Aayush-Kadam/"><img src="https://hits.sh/github.com/Aayush-Kadam.svg?label=Profile%20image%20requests&color=438b9b&labelColor=17232f&style=for-the-badge" alt="Hits.sh count of provider-served profile image requests"></a><br>
-  <sub>Badge requests, including repeat loads and previews; GitHub's image cache can delay updates. This is not a unique-visitor count.</sub>
+  <strong>VIEWS</strong><br>
+  <a href="https://hits.sh/github.com/Aayush-Kadam/"><img src="https://hits.sh/github.com/Aayush-Kadam.svg?label=Views&color=438b9b&labelColor=17232f&style=for-the-badge" alt="Hits.sh Views badge showing provider-served image requests"></a><br>
+  <sub>Counts badge requests, including repeat loads; not verified unique visitors.</sub>
 </p>
 
 # Aayush Kadam

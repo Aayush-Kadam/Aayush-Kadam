@@ -18,6 +18,12 @@ def circle(x,y,r,color=CYAN,opacity=1):
     return f'<circle cx="{x:.2f}" cy="{y:.2f}" r="{r}" fill="{color}" opacity="{opacity}"/>'
 
 def wrap(w,h,title,body,desc):
+    motion_css = '''
+<style>
+@keyframes orbital-trace { to { stroke-dashoffset: -480; } }
+.orbital-trace { animation: orbital-trace 80s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .orbital-trace { animation: none; } }
+</style>''' if title.startswith('Aayush Kadam') else ''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">
 <title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>
 <defs>
@@ -25,12 +31,7 @@ def wrap(w,h,title,body,desc):
 <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{CYAN}" stop-opacity=".2"/><stop offset=".5" stop-color="#18344D" stop-opacity=".5"/><stop offset="1" stop-color="{VIOLET}" stop-opacity=".15"/></linearGradient>
 <linearGradient id="edge"><stop stop-color="{CYAN}"/><stop offset=".55" stop-color="#80CCD8"/><stop offset="1" stop-color="{GOLD}"/></linearGradient>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#23354B" stroke-width=".5"/></pattern>
-</defs>
-<style>
-@keyframes orbital-trace {{ to {{ stroke-dashoffset: -480; }} }}
-.orbital-trace {{ animation: orbital-trace 80s linear infinite; }}
-@media (prefers-reduced-motion: reduce) {{ .orbital-trace {{ animation: none; }} }}
-</style>
+</defs>{motion_css}
 <rect width="{w}" height="{h}" rx="20" fill="{BG}"/>
 <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="20" fill="none" stroke="#2B3A50"/>
 {body}</svg>'''

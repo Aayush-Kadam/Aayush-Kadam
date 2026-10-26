@@ -1,60 +1,51 @@
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/hero/observatory-mobile.svg">
+  <img src="assets/hero/observatory.svg" width="1200" alt="Aayush Kadam: Ideas meet evidence. An original luminous faceted instrument sits within fine orbital rings against a dark field.">
+</picture>
+
+<p align="center">
+  <strong>VIEWS</strong><br>
+  <a href="https://hits.sh/github.com/Aayush-Kadam/"><img src="https://hits.sh/github.com/Aayush-Kadam.svg?label=Views&color=438b9b&labelColor=17232f&style=for-the-badge" alt="Hits.sh Views badge showing provider-served image requests"></a><br>
+  <sub>Counts badge requests, including repeat loads; not verified unique visitors.</sub>
+</p>
+
 # Aayush Kadam
 
-### Making complex decisions testable, explainable, and verifiable.
-
-Computer Science Sophomore at **MIT ADT University**. I build research software and developer tools around a practical question: **what evidence would make a difficult result worth trusting?**
-
-Start with **[GhostFrame](https://github.com/Aayush-Kadam/ghostframe)**: a local recorder and branching debugger for supported deterministic agent workflows.
+I build software and computational research that makes difficult claims **inspectable**. My work sits between developer tools and economics: record what happened, make an assumption explicit, and look for the smallest result that could prove it wrong. I'm a Computer Science sophomore at MIT ADT University, Pune.
 
 ## Selected engineering
 
-### [GhostFrame](https://github.com/Aayush-Kadam/ghostframe) · Observe and reproduce
+<a href="https://github.com/Aayush-Kadam/ghostframe"><img src="assets/projects/ghostframe.svg" width="1200" alt="GhostFrame: a branching execution diagram with original and changed continuations."></a>
 
-Python SDK, SQLite evidence store, and React/TypeScript debugger. Record a synthetic document-agent incident, replay its supported policy, replace one observation, and execute a new continuation.
+**[GhostFrame ↗](https://github.com/Aayush-Kadam/ghostframe)** — Record supported deterministic AI-agent executions, replace one observation, and inspect the resulting continuation against the preserved original. **Pre-release:** arbitrary SDK functions support playback only; general agent resumption and live-model replay are not implemented.
 
-- **Engineering focus:** privacy-aware capture, evidence consistency, bounded execution, and loopback API controls.
-- **Inspect:** [architecture](https://github.com/Aayush-Kadam/ghostframe/blob/main/docs/architecture.md) · [CI](https://github.com/Aayush-Kadam/ghostframe/actions) · [run the demo](https://github.com/Aayush-Kadam/ghostframe#start-the-synthetic-demonstration).
-- **Boundary:** arbitrary SDK functions support playback only; live-model replay and general agent resumption are not implemented. The published pre-release predates the cross-platform CI repair; use current main for that fix.
+<a href="https://github.com/Aayush-Kadam/economic-protocol-verifier"><img src="assets/projects/epv.svg" width="1200" alt="Economic Protocol Verifier: finite states and a checked path through the model."></a>
 
-### [Economic Protocol Verifier](https://github.com/Aayush-Kadam/economic-protocol-verifier) · Specify and verify
+**[Economic Protocol Verifier ↗](https://github.com/Aayush-Kadam/economic-protocol-verifier)** — Check selected economic protocols in finite domains with explicit semantics, replayable counterexamples, and scoped certificate checks. **Research preview:** translation from economics to logic remains trusted; the external checker is required for the strongest assurance level.
 
-Python framework for finite economic mechanisms: exhaustive checking, SMT cross-checks with cvc5/Z3, replayable counterexamples, and hash-bound Alethe proof bundles checked with Carcara.
+<a href="https://github.com/Aayush-Kadam/incentive-fuzzer"><img src="assets/projects/incentive-fuzzer.svg" width="1200" alt="Incentive Fuzzer: a bounded search field highlighting a possible counterexample."></a>
 
-- **Engineering focus:** explicit trust boundaries, counterexample replay, and assurance levels that distinguish enumeration, solvers, and proof checking.
-- **Inspect:** [trust and assurance](https://github.com/Aayush-Kadam/economic-protocol-verifier/blob/main/TRUST_AND_ASSURANCE.md) · [first result](https://github.com/Aayush-Kadam/economic-protocol-verifier#first-result) · [limitations](https://github.com/Aayush-Kadam/economic-protocol-verifier/blob/main/LIMITATIONS.md).
-- **Boundary:** finite declared domains; the economic-to-logic translation remains trusted. V3 requires the pinned external checker. Public source is a research preview with restrictive license terms.
-
-### [Incentive Fuzzer](https://github.com/Aayush-Kadam/incentive-fuzzer) · Search and stress-test
-
-Python research prototype for bounded economic rules. A typed specification feeds exact evaluation, adversarial search, witness replay, restricted Z3 checks, finite games, and repair regression.
-
-- **Engineering focus:** falsifiable findings and explicit failure statuses, including a preserved benchmark miss.
-- **Inspect:** [quickstart](https://github.com/Aayush-Kadam/incentive-fuzzer#quickstart) · [reproduction](https://github.com/Aayush-Kadam/incentive-fuzzer#reproducibility) · [research report](https://github.com/Aayush-Kadam/incentive-fuzzer/blob/master/paper/INCENTIVE_FUZZER_RESEARCH_PREVIEW.md).
-- **Boundary:** curated component-level benchmarks are not real-world audit accuracy or behavioral forecasts. Independent domain review is pending; see the repository's license decision before reuse.
+**[Incentive Fuzzer ↗](https://github.com/Aayush-Kadam/incentive-fuzzer)** — Search feasible behavior for a counterexample, replay its witness exactly, and regression-test a proposed repair. **Research preview:** bounded component tests are not forecasts or real-world audit accuracy; no software license has been selected.
 
 ## Computational research
 
-- **[WAITLAB](https://github.com/Aayush-Kadam/WaitLab)** — strategic delay, dynamic matching, response operators, and synthetic identification. [Paper-to-code map](https://github.com/Aayush-Kadam/WaitLab/blob/main/docs/PAPER_TO_CODE.md).
-- **[Delegation-Proof Market Design](https://github.com/Aayush-Kadam/delegation-proof-market-design)** — finite-horizon adaptive bidding experiments, revenue–allocation tradeoffs, and failed mechanism repairs preserved as results.
-- **[VERITAS](https://github.com/Aayush-Kadam/veritas-computational-lab)** — verification congestion, deceptive entry, and Bayesian demand discipline. Model-generated results, not field evidence.
+<img src="assets/graphics/research-atlas.svg" width="1200" alt="Four linked research themes: matching, memory, information, and mechanisms.">
 
-These repositories contain working papers, technical reports, and experimental artifacts. Repository publication or an archive DOI does not establish peer review or independent replication.
+- **[WAITLAB ↗](https://github.com/Aayush-Kadam/WaitLab)** — When does waiting change the pool worth waiting for? Strategic delay and synthetic response recovery.
+- **[The Economics of Forgetting ↗](https://github.com/Aayush-Kadam/economics-of-forgetting)** — How do persistent records change incentives to rehabilitate? A finite-horizon working paper.
+- **[VERITAS ↗](https://github.com/Aayush-Kadam/veritas-computational-lab)** — What happens when persuasive evidence is cheap? A computational lab with model-generated evidence and mixed recovery results.
+- **[Delegation-Proof Market Design ↗](https://github.com/Aayush-Kadam/delegation-proof-market-design)** — How do auction rankings change when algorithms bid? Finite-horizon artifacts; no successful general mechanism claimed.
 
-## How the work connects
-
-```text
-Specify → Simulate → Stress-test → Verify → Observe → Reproduce
-```
-
-This is a shared research workflow, not an integrated software platform. EPV and Incentive Fuzzer investigate bounded institutional rules; GhostFrame studies execution evidence. WAITLAB and the computational papers make model assumptions and numerical results inspectable.
+Public repositories and archive records do not establish peer review or independent replication.
 
 ## Technical practice
 
-**Reliability:** Python, regression and property-based testing, CLI/API design, SQLite evidence, cross-platform CI.  
-**Verification:** finite semantics, exact arithmetic, SMT-backed checks, counterexamples, certificate trust boundaries.  
-**Research computing:** controlled simulations, explicit seeds and domains, baseline comparisons, reproducible artifacts.  
-**Interfaces:** React/TypeScript debugging tools and computational exhibits.
+**Build:** Python, TypeScript, React, SQLite, CLI and API design.<br>
+**Check:** Pytest, Hypothesis, exact arithmetic, finite models, Z3/cvc5, counterexample replay.<br>
+**Explain:** explicit assumptions, reproducible artifacts, evidence boundaries, and preserved negative results.
 
-I prefer a small reproducible counterexample to a broad unsupported claim. Tests establish behavior within their coverage; synthetic experiments establish results within their models. Limitations and negative results belong beside the result.
+## Connect
 
-For technical discussion, use the relevant repository's issue tracker. Browse [all public repositories](https://github.com/Aayush-Kadam?tab=repositories).
+For thoughtful discussion about agent infrastructure, software evidence, or computational economics, [connect with me on LinkedIn ↗](https://www.linkedin.com/in/aayush-kadam-18545a217).
+
+<sub>[Public-source claim ledger](docs/SOURCES.md) · [Counter and artwork notes](docs/MAINTENANCE.md)</sub>
